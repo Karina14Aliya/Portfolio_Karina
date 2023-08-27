@@ -5,8 +5,9 @@
 }
 
 body {
-    width: 100%;
-    overflow: hidden;
+    width: 1600px;
+    height: 2800px;
+    background-color: #FFDBC3;
 }
 
 nav {
@@ -39,3 +40,95 @@ nav {
     font-weight: 500;
 }
 
+.My-informasion {
+    display: flex;
+    justify-content: space-between;
+    background-color: #5C4B99;
+    height: 620px;
+    padding: 0px 120px;
+    align-items: center;
+}
+.Informasion h3 {
+    font-size: 20px;
+    font-weight: 500;
+    font-style: italic;
+}
+
+.Informasion h1 {
+    font-size: 40px;
+    font-weight: 600;
+    margin-bottom: 16px;
+}
+
+.Informasion p{
+    font-size: 20px;
+    font-weight: 400;
+    margin-bottom: 16px;
+}
+
+.Informasion a{
+    background-color: #FFF;
+    border-radius: 12px;
+    color: #3D246C;
+    text-decoration: none;
+    padding: 8px 32px;
+    margin-bottom: 16px;
+}
+
+.Images {
+    width: 360px;
+    height: 360px;
+}
+
+.Images img {
+    width: 100%;
+    height: 100%;
+    border-radius: 16px;
+}
+
+main {
+    text-align: center;
+}
+
+.Text-Portofolio {
+    padding: 80px 480px;
+}
+
+.Text-Portofolio h1 {
+    font-size: 40px;
+    font-weight: 700;
+}
+
+.Text-Portofolio p{
+    font-size: 20px;
+    font-weight: 400;
+}
+
+.Images-Portofolio {
+    padding: 0px 170px;
+    border-radius: 20px;
+}
+
+.Images-Portofolio img {
+    border-radius: 20px;
+}
+
+.Group-1 {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    height: 320px;
+    margin-bottom: 60px;
+}
+
+.Group-2 {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    height: 320px;
+    margin-bottom: 60px;
+}
+
+form {
+    background-color: #5C4B99;
+}

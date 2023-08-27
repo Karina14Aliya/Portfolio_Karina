@@ -3,6 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Oswald:wght@200;300;400;500;600;700&display=swap" rel="stylesheet">
@@ -12,7 +13,7 @@
 <body>
 
     <nav>
-        <div class="Logo">Karina Aliya Farmawati</div>
+        <div class="Logo">Karina Aliya Fatmawati</div>
         <div class="Wrap-Menu">
             <div class="Menu">Beranda</div>
             <div class="Menu">Portofolio</div>
@@ -21,19 +22,59 @@
     </nav>
 
     <section class="My-informasion">
-        <div class="Informasion">
+        <div class="Informasion" data-aos="fade-right" data-aos-duration="10000">
             <h3>Salam kenal Semua...</h3>
             <h1>Karina Aliya Fatmawati</h1>
             <p>Seorang mahasiswa semester 6<br>
                 Universitas Pamulang jurusan Manajemen<br>
-                Saat ini sedang mengikuti Studi Independen di Revou
+                Saat ini sedang mengikuti Studi Independen di Revou<br>
             </p>
             <a href="#">Download CV</a>
         </div>
-        <div class="Images">
+        <div class="Images" data-aos="fade-left" data-aos-duration="10000">
             <img src="Asset/IMG20230619113802.jpg" alt="Karina">
         </div>
     </section>
+
+    <main>
+        <div class="Text-Portofolio" >
+            <h1>Portofolio</h1>
+            <p>Berikut hasil kerja selama ini</p>
+        </div>
+        <div class="Images-Portofolio">
+            <div class="Group-1">
+                <img src="Asset/IMG20230605161312.jpg" alt="Photo">
+                <img src="Asset/IMG20230801205507.jpg" alt="Photo">
+                <img src="Asset/IMG20230625063406.jpg" alt="Photo">
+            </div>
+            <div class="Group-2">
+                <img src="Asset//IMG20230618061533.jpg" alt="Photo">
+                <img src="Asset/IMG20230528114230.jpg" alt="Photo">
+                <img src="Asset/IMG20230701064131.jpg" alt="Photo">
+            </div>
+        </div>
+    </main>
+
+    <form>
+        <h1>Kontak</h1>
+        <p>Hubungi saya jika anda tertarik berkolaborasi dengan saya</p>
+        <div>
+            <label>Nama:</label>
+            <input type="text" placeholder="Ketik Nama Anda">
+            <label>Emai:</label>
+            <input type="text" placeholder="Ketik Emai Anda">
+        </div>
+        <div>
+            <label>Pesan Anda</label>
+            <input type="text" placeholder="Ketik Pesan Anda">
+        </div>
+        <button>Kirim Pesan</button>
+    </form>
+
     
+    <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+    <script>
+      AOS.init();
+    </script>
 </body>
 </html>
