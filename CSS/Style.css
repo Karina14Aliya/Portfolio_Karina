@@ -5,9 +5,17 @@
 }
 
 body {
-    width: 1600px;
-    height: 2800px;
     background-color: #FFDBC3;
+}
+
+h1 {
+    font-size: 40px;
+    font-weight: 600;
+}
+
+p {
+    font-size: 20px;
+    font-weight: 400;
 }
 
 nav {
@@ -48,6 +56,7 @@ nav {
     padding: 0px 120px;
     align-items: center;
 }
+
 .Informasion h3 {
     font-size: 20px;
     font-weight: 500;
@@ -55,14 +64,10 @@ nav {
 }
 
 .Informasion h1 {
-    font-size: 40px;
-    font-weight: 600;
     margin-bottom: 16px;
 }
 
 .Informasion p{
-    font-size: 20px;
-    font-weight: 400;
     margin-bottom: 16px;
 }
 
@@ -76,8 +81,10 @@ nav {
 }
 
 .Images {
-    width: 360px;
-    height: 360px;
+    object-fit: cover;
+    object-position: center center;
+    width: 250px;
+    height: 250px;
 }
 
 .Images img {
@@ -88,25 +95,17 @@ nav {
 
 main {
     text-align: center;
+    width: 100%;
 }
 
 .Text-Portofolio {
     padding: 80px 480px;
 }
 
-.Text-Portofolio h1 {
-    font-size: 40px;
-    font-weight: 700;
-}
-
-.Text-Portofolio p{
-    font-size: 20px;
-    font-weight: 400;
-}
-
 .Images-Portofolio {
-    padding: 0px 170px;
+    align-items: center;
     border-radius: 20px;
+    margin: 0px 170px;
 }
 
 .Images-Portofolio img {
@@ -129,6 +128,79 @@ main {
     margin-bottom: 60px;
 }
 
-form {
+.Section-Form {
     background-color: #5C4B99;
+    width: 100%;
+    height: 800px;
+}
+
+.Title-Form {
+    text-align: center;
+    padding: 60px;
+}
+
+.Title-Form h1 {
+    margin-bottom: 16px;
+}
+
+form {
+    display: flex;
+    flex-direction: column;
+    padding: 0px 160px;
+}
+
+form ::placeholder {
+    padding: 20px;
+    align-items: start;
+    color: black;
+}
+
+form label {
+    font-size: 18px;
+    font-weight: 500;
+    color: white;
+    margin-bottom: 12px;
+}
+
+#Data-Form {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    margin-bottom: 12px;
+}
+
+.Name-Form , .Email-Form {
+    display: flex;
+    flex-direction: column;
+}
+
+#Data-Form input{
+    width: 530px;
+    height: 53px;
+    padding: 20px 100px;
+    border-radius: 12px;
+}
+
+.Pesan-Form {
+    display: flex;
+    flex-direction: column;
+}
+
+.Pesan-Form input{
+    border-radius: 12px;
+    font-size: 18px;
+    font-weight: 400;
+    background-color: white;
+    padding: 80px 400px;
+    height: 235px;
+
+}
+
+button {
+    border-radius: 12px;
+    background-color: white;
+    padding: 16px 504px;
+    font-size: 18px;
+    font-weight: 700;
+    margin: 44px 0px;
 }

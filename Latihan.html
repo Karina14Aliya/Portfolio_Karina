@@ -42,12 +42,12 @@
             <p>Berikut hasil kerja selama ini</p>
         </div>
         <div class="Images-Portofolio">
-            <div class="Group-1">
+            <div class="Group-1" data-aos="flip-up" data-aos-duration="10000">
                 <img src="Asset/IMG20230605161312.jpg" alt="Photo">
                 <img src="Asset/IMG20230801205507.jpg" alt="Photo">
                 <img src="Asset/IMG20230625063406.jpg" alt="Photo">
             </div>
-            <div class="Group-2">
+            <div class="Group-2" data-aos="flip-up" data-aos-duration="10000">
                 <img src="Asset//IMG20230618061533.jpg" alt="Photo">
                 <img src="Asset/IMG20230528114230.jpg" alt="Photo">
                 <img src="Asset/IMG20230701064131.jpg" alt="Photo">
@@ -55,21 +55,29 @@
         </div>
     </main>
 
-    <form>
-        <h1>Kontak</h1>
-        <p>Hubungi saya jika anda tertarik berkolaborasi dengan saya</p>
-        <div>
-            <label>Nama:</label>
-            <input type="text" placeholder="Ketik Nama Anda">
-            <label>Emai:</label>
-            <input type="text" placeholder="Ketik Emai Anda">
+    <section class="Section-Form">
+        <div class="Title-Form">
+            <h1>Kontak</h1>
+            <p>Hubungi saya jika anda tertarik berkolaborasi dengan saya</p>
         </div>
-        <div>
-            <label>Pesan Anda</label>
-            <input type="text" placeholder="Ketik Pesan Anda">
-        </div>
-        <button>Kirim Pesan</button>
-    </form>
+        <form>
+            <div id="Data-Form">
+                <div class="Name-Form">
+                    <label>Nama:</label>
+                    <input type="text" placeholder="Ketik Nama Anda">
+                </div>
+                <div class="Email-Form">
+                    <label>Email:</label>
+                    <input type="text" placeholder="Ketik Email Anda">
+                </div>
+            </div>
+            <div class="Pesan-Form">
+                <label>Pesan Anda</label>
+                <input type="text" placeholder="Ketik Pesan Anda">
+            </div>
+            <button type="submit">Kirim Pesan</button>
+        </form>
+    </section>
 
     
     <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
