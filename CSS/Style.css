@@ -61,14 +61,17 @@ nav {
     font-size: 20px;
     font-weight: 500;
     font-style: italic;
+    color: white;
 }
 
 .Informasion h1 {
     margin-bottom: 16px;
+    color: white;
 }
 
 .Informasion p{
     margin-bottom: 16px;
+    color: white;
 }
 
 .Informasion a{
