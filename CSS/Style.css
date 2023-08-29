@@ -80,6 +80,11 @@ nav {
     margin-bottom: 16px;
 }
 
+.Informasion a:hover {
+    background-color: #FFDBC3;
+    transform: .6s;
+}
+
 .Images {
     object-fit: cover;
     object-position: center center;
@@ -199,8 +204,45 @@ form label {
 button {
     border-radius: 12px;
     background-color: white;
+    color: #3D246C;
     padding: 16px 504px;
     font-size: 18px;
     font-weight: 700;
     margin: 44px 0px;
+}
+
+button:hover {
+    background-color: #FFDBC3;
+    transform: .6s;
+}
+
+footer {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+    margin: 16px;
+}
+
+footer p {
+    color: #3D246C;
+    font-size: 18px;
+    font-weight: 400px;
+}
+
+footer a {
+    background-color: #5C4B99;
+    color: #FFDBC3;
+    padding: 20px;
+    font-size: 30px;
+    width: 60px;
+    text-align: center;
+    text-decoration: none;
+    margin: 10px 10px;
+    border-radius: 50%;
+}
+
+footer a:hover {
+    background-color: #3D246C;
+    transform: .6s;
 }
