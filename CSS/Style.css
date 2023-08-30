@@ -18,6 +18,7 @@ p {
     font-weight: 400;
 }
 
+/* NAVIGATION BAR */
 nav {
     display: flex;
     flex-direction: row;
@@ -27,6 +28,8 @@ nav {
     background-color: #3D246C;
     color: white;
     height: 80px;
+    position: sticky;
+    top: 0;
 }
 
 .Logo {
@@ -48,7 +51,8 @@ nav {
     font-weight: 500;
 }
 
-.My-informasion {
+/* INFORMASION SECTION */
+.My-information {
     display: flex;
     justify-content: space-between;
     background-color: #5C4B99;
@@ -57,24 +61,24 @@ nav {
     align-items: center;
 }
 
-.Informasion h3 {
+.Information h3 {
     font-size: 20px;
     font-weight: 500;
     font-style: italic;
     color: white;
 }
 
-.Informasion h1 {
+.Information h1 {
     margin-bottom: 16px;
     color: white;
 }
 
-.Informasion p{
+.Information p{
     margin-bottom: 16px;
     color: white;
 }
 
-.Informasion a{
+.Information a{
     background-color: #FFF;
     border-radius: 12px;
     color: #3D246C;
@@ -83,7 +87,7 @@ nav {
     margin-bottom: 16px;
 }
 
-.Informasion a:hover {
+.Information a:hover {
     background-color: #FFDBC3;
     transform: .6s;
 }
@@ -101,22 +105,32 @@ nav {
     border-radius: 16px;
 }
 
+/* PORTOFOLIO SECTION */
 main {
     text-align: center;
     width: 100%;
+    padding: 50px;
 }
 
 .Text-Portofolio {
-    padding: 80px 480px;
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 50px;
 }
 
 .Images-Portofolio {
     align-items: center;
     border-radius: 20px;
-    margin: 0px 170px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
 }
 
 .Images-Portofolio img {
+    flex-basis: calc(35% - 100px);
+    margin: 30px;
+    height: 500px;
+    width: 300px;
     border-radius: 20px;
 }
 
@@ -136,6 +150,7 @@ main {
     margin-bottom: 60px;
 }
 
+/* FORM SECTION */
 .Section-Form {
     background-color: #5C4B99;
     width: 100%;
@@ -145,6 +160,7 @@ main {
 .Title-Form {
     text-align: center;
     padding: 60px;
+    color: white;
 }
 
 .Title-Form h1 {
@@ -180,12 +196,12 @@ form label {
 .Name-Form , .Email-Form {
     display: flex;
     flex-direction: column;
+    width: 48%;
 }
 
 #Data-Form input{
-    width: 530px;
     height: 53px;
-    padding: 20px 100px;
+    padding: 20px 50px;
     border-radius: 12px;
 }
 
@@ -199,7 +215,7 @@ form label {
     font-size: 18px;
     font-weight: 400;
     background-color: white;
-    padding: 80px 400px;
+    padding: 80px 100px;
     height: 235px;
 
 }
@@ -208,7 +224,7 @@ button {
     border-radius: 12px;
     background-color: white;
     color: #3D246C;
-    padding: 16px 504px;
+    padding: 16px;
     font-size: 18px;
     font-weight: 700;
     margin: 44px 0px;
@@ -219,6 +235,7 @@ button:hover {
     transform: .6s;
 }
 
+/* FOOTER SECTION */ 
 footer {
     display: flex;
     flex-direction: row;
@@ -248,4 +265,23 @@ footer a {
 footer a:hover {
     background-color: #3D246C;
     transform: .6s;
+}
+
+/* MEDIA QUERY */
+@media (max-width: 1000px) {
+    body {
+        background-color: #8CC0DE;
+    }
+
+    nav {
+        background-color: #1D5B79
+    }
+
+    .My-information {
+        background-color: #468B97;
+    }
+
+    .Section-Form {
+        background-color: #EF6262;
+    }
 }
