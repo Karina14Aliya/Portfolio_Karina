@@ -1,0 +1,1 @@
+const box = document.getElementsByClassName('Images-Portofolio').removeChild(document.getElementsByClassName('Images-Portofolio').firstChild)

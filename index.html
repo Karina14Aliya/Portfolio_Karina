@@ -7,7 +7,9 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
-    <link href="https://fonts.googleapis.com/css2?family=Oswald:wght@200;300;400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@100;200;300;400;500;600;700;800;900&family=Oswald:wght@200;300;400;500;600;700&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="CSS/Style.css">
     <title>Portofolio</title>
 </head>
@@ -16,26 +18,26 @@
     <nav>
         <div class="Logo">Karina Aliya Fatmawati</div>
         <div class="Wrap-Menu">
-            <div class="Menu">Beranda</div>
-            <div class="Menu">Portofolio</div>
-            <div class="Menu">Kontak</div>
+            <a class="Menu" href="My-information" >Beranda</a>
+            <a class="Menu" href="." >Portofolio</a>
+            <a class="Menu" href="" >Kontak</a>
         </div>
     </nav>
 
     <!-- INFORMASTION -->
     <section class="My-information">
         <div class="Information" data-aos="fade-right" data-aos-duration="10000">
-            <h3>Salam kenal Semua...</h3>
+            <h3>Salam kenal😊</h3>
             <h1>Karina Aliya Fatmawati</h1>
             <p>Seorang mahasiswa semester 6<br>
                 Universitas Pamulang jurusan Manajemen<br>
-                Saat ini sedang mengikuti Studi Independen di Revou<br>
+                Alumni Studi Independen di RevoU Tech Academy - Data & Software Engineering<br>
             </p>
-            <a href="#">Download CV</a>
+            <a href="https://drive.google.com/file/d/1Bj99IVITgGMZmcwlJ0Kamouk-JFmq_-h/view?usp=sharing">Download CV</a>
         </div>
 
         <div class="Images" data-aos="fade-left" data-aos-duration="10000">
-            <img src="Asset/IMG20230619113802.jpg" alt="Karina">
+            <img src="Asset/IMG_20240108_174736.jpg" alt="Karina">
         </div>
     </section>
 
@@ -45,47 +47,22 @@
             <h1>Portofolio</h1>
             <p>Berikut hasil kerja selama ini</p>
         </div>
-        <div class="Images-Portofolio">
-            <img src="Asset/IMG20230605161312.jpg" alt="Photo">
-            <img src="Asset/IMG20230801205507.jpg" alt="Photo">
-            <img src="Asset/IMG20230625063406.jpg" alt="Photo">
-            <img src="Asset//IMG20230618061533.jpg" alt="Photo">
-            <img src="Asset/IMG20230528114230.jpg" alt="Photo">
-            <img src="Asset/IMG20230701064131.jpg" alt="Photo">
-        </div>
+        <section class="File-Portofolio" data-aos="flip-down" data-aos-duration="10000">
+            <div class="Portofolio">
+                <img src="Asset/laptop.png" alt="Photo">
+                <a href="https://kampus-merdeka-software-engineering.github.io/FE-Balikpapan-9/">Website</a>
+            </div>
+            <div class="Portofolio">
+                <img src="Asset/dashboard.png" alt="Photo">
+                <a href="https://lookerstudio.google.com/u/0/reporting/66b05863-9b63-4098-bbda-88aeef9e6575/page/Xk4gD">Dashboard</a>
+            </div>
+        </section>
     </main>
-
-    <!-- FORM -->
-    <section class="Section-Form">
-        <div class="Title-Form">
-            <h1>Kontak</h1>
-            <p>Hubungi saya jika anda tertarik berkolaborasi dengan saya</p>
-        </div>
-        <form>
-            <div id="Data-Form">
-                <div class="Name-Form">
-                    <label>Nama:</label>
-                    <input type="text" placeholder="Ketik Nama Anda">
-                </div>
-                <div class="Email-Form">
-                    <label>Email:</label>
-                    <input type="text" placeholder="Ketik Email Anda">
-                </div>
-            </div>
-            <div class="Pesan-Form">
-                <label>Pesan Anda</label>
-                <input type="text" placeholder="Ketik Pesan Anda">
-            </div>
-            <button type="submit">Kirim Pesan</button>
-        </form>
-    </section>
 
     <!-- FOOTER -->
     <footer data-aos-anchor-placement="bottom-bottom" data-aos-duration="10000">
-        <a href="www.linkedin.com/in/karinaaliya14" class="fa fa-linkedin"></a>
-        <p>Software Engineering</p>
+        <a href="https://www.linkedin.com/in/karinaaliya/" class="fa fa-linkedin"></a>
         <a href="https://www.instagram.com/alyakarrr/?utm_source=qr&igshid=MzNlNGNkZWQ4Mg%3D%3D" class="fa fa-instagram"></a>
-        <p>Data Analytics</p>
         <a href="https://github.com/Karina14Aliya" class="fa fa-github" ></a>
     </footer>
 
