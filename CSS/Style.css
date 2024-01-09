@@ -5,7 +5,7 @@
 }
 
 body {
-    background-color: #FBF9F1;
+    overflow-x: hidden;
 }
 
 h1 {
@@ -24,17 +24,17 @@ nav {
     flex-direction: row;
     justify-content: space-between;
     align-items: center;
-    padding: 0px 120px;
     background-color: #92C7CF;
     color: white;
     height: 80px;
     position: sticky;
     top: 0;
+    padding: 0px 50px;
+    z-index: 10;
 }
 
 .Logo {
     color: #FFF;
-    font-family: Poppins;
     font-size: 24px;
     font-style: normal;
     font-weight: 600;
@@ -46,7 +46,7 @@ nav {
 }
 
 .Menu {
-    margin: 0px 16px;
+    padding: 0px 16px;
     font-size: 20px;
     font-weight: 500;
     text-decoration: none;
@@ -58,30 +58,36 @@ nav {
 }
 
 /* INFORMASION SECTION */
-.My-information {
+#My-information {
     display: flex;
     justify-content: space-between;
     background-color: #AAD7D9;
     height: 620px;
-    padding: 0px 120px;
+    padding: 0px 100px;
     align-items: center;
+}
+
+.Information {
+    width: 65%;
 }
 
 .Information h3 {
     font-size: 20px;
     font-weight: 500;
     font-style: initial;
-    color: white;
+    color: #FFF;
 }
 
 .Information h1 {
     margin-bottom: 16px;
-    color: white;
+    color: #FFF;
+    font-weight: 700;
 }
 
 .Information p{
     margin-bottom: 16px;
-    color: white;
+    font-weight: 500;
+    color: #FFF;
 }
 
 .Information a{
@@ -103,13 +109,11 @@ nav {
 .Images {
     object-fit: cover;
     object-position: center center;
-    width: 450px;
-    height: 450px;
 }
 
 .Images img {
-    width: 100%;
-    height: 100%;
+    width: 360px;
+    height: 360px;
     border-radius: 16px;
 }
 
@@ -117,11 +121,7 @@ nav {
 main {
     text-align: center;
     width: 100%;
-    padding: 50px;
-}
-
-.Text-Portofolio {
-    margin-bottom: 50px;
+    padding: 30px;
 }
 
 .File-Portofolio {
@@ -131,14 +131,37 @@ main {
 }
 
 .Portofolio{
-    padding: 10px;
+    flex-wrap: wrap;
+    padding: 50px;
+    width: 50%;
 }
 
 .Portofolio img {
-    width: 80%;
-    height: 350px;
+    width: 100%;
+    height: 360px;
     border-radius: 20px;
-    margin: 0px 50px 20px;
+    margin: 20px 0px;
+}
+
+.Desription-Portofolio {
+    margin-bottom: 20px;
+    padding: 20px;
+    border-radius: 20px;
+    text-align: justify;
+    background-color: #92C7CF;
+}
+
+.Portofolio h3 {
+    font-size: 22px;
+    font-weight: 600;
+    color: #FFF;
+    margin-bottom: 10px;
+}
+
+.Portofolio h4 {
+    font-size: 20px;
+    font-weight: 400;
+    color: #FFF;
 }
 
 .Portofolio a {
@@ -147,41 +170,40 @@ main {
     color: #FFF;
     text-decoration: none;
     padding: 8px 32px;
-    margin: 100px 20px;
     font-size: 20px;
     font-weight: 600;
     align-items: center;
+    box-shadow: 4px 4px 15px rgba(0, 0, 0, 0.20);
 }
 
 .Portofolio a:hover {
-    background-color: #AAD7D9;
+    box-shadow: 4px 4px 15px rgba(0, 0, 0, 0.10);
+    background-color: #468B97;
 }
 
 /* FOOTER SECTION */ 
 footer {
     display: flex;
     flex-direction: row;
-    justify-content: space-around;
+    justify-content: center;
     align-items: center;
     background-color: #92C7CF;
-}
-
-footer p {
-    color: #AAD7D9;
-    font-size: 18px;
-    font-weight: 400px;
+    margin-top: 0;
 }
 
 footer a {
-    background-color: #FBF9F1;
+    background-color: #FFF;
     color: #AAD7D9;
-    padding: 20px;
-    font-size: 30px;
-    width: 60px;
+    padding: 20px 10px;
+    width: 70px;
     text-align: center;
     text-decoration: none;
-    margin: 10px 10px;
+    margin: 10px 50px;
     border-radius: 50%;
+}
+
+.fa {
+    font-size: 28px;
 }
 
 footer a:hover {
@@ -189,21 +211,28 @@ footer a:hover {
     transform: .6s;
 }
 
-/* MEDIA QUERY */
-@media (max-width: 1000px) {
-    body {
-        background-color: #8CC0DE;
-    }
+.contact {
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    position: sticky;
+    bottom: 4%;
+    z-index: 3;
+    margin-left:84%;
+    margin-right: 4%;
+    padding: 10px;
+    background-color: #424242;
+    border-radius: 20px;
+}
 
-    nav {
-        background-color: #1D5B79
-    }
+.contact:hover {
+    background-color: #1D5B79;
+    transform: scale(1.04);
+}
 
-    .My-information {
-        background-color: #468B97;
-    }
-
-    .Section-Form {
-        background-color: #EF6262;
-    }
+.contact a {
+    text-decoration: none;
+    color: #FFFFFF;
+    font-size: 20px;
+    font-weight: 600;
 }
